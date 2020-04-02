@@ -36,5 +36,6 @@ def page_not_found(error):
 
 
 if __name__ == '__main__':
+    print('\n\n\033[1;33mAVATAR SERVICE STARTED!\033[0m\n')
     checkDir()
     WSGIServer(("0.0.0.0", 5000), app).serve_forever()
